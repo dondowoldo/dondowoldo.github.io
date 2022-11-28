@@ -1,0 +1,49 @@
+.main_container
+{
+
+}
+/*#26282b*/
+/*#616161*/
+/*#1f454a*/
+
+
+.head
+{
+    height: 80px;
+    display: flex;
+    justify-content: left;
+    background-color: #1f454a;
+
+}
+
+#name
+{
+    font-family: 'Abril Fatface';
+    color: white;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+
+
+.inner_container
+{
+
+
+}
+
+.top_nav
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    margin-top: 30px;
+    width: 70%;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+
