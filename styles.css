@@ -2,6 +2,7 @@ body
 {
     background-image: url("./images/piano2.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .outer_container
@@ -20,9 +21,10 @@ header
     position: fixed;
     top: 0;
     width: 100%;
+
 }
 
-#name
+.name
 {
     font-family: 'Abril Fatface';
     color: white;
@@ -73,23 +75,23 @@ header
 {
     flex-direction: column;
     display: flex;
-    background: hsla(0, 22%, 85%, 0.6);
+    background: hsla(0, 9%, 77%, 0.7);
     max-width: 80%;
     margin-bottom: 10%;
     margin-top: 200px;
     margin-right: 10%;
     margin-left: 10%;
     padding: 10%;
+    padding-top: 5%;
     align-items: stretch;
 }
 
-#welcome
+.title
 {
-    margin-top: 5%;
     font-family: 'Sen', sans-serif;
     font-family: 'Tangerine', cursive;
     font-weight: bold;
-    font-size: 72px;
+    font-size: 84px;
     text-align: center;
 }
 
@@ -129,4 +131,17 @@ footer
 {
 margin-top: 2px;
 margin-top: 2px;
+}
+
+#cs50
+{
+    margin-top: 60px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#pointer
+{
+    text-align: center;
 }
