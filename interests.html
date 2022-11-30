@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 
-<!--    1.) At least 4 different pages
-2.) At least 10 HTML tags besides html,head,body,title
-3.) Integrate 1 or more features from Bootstrap
-4.) At least 5 different CSS selectors (tags,classes,id)
-5.) At leaste 5 different CSS properties (font-size,margin,etc..)
-6.) At least 1 JavaScript feature
-7.) Make sure website looks OK on mobile, laptop and PC-->
-
 <html lang="en">
 <head>
 <meta name="viewport" content="initial-scale=1, width=device-width">
@@ -29,20 +21,19 @@
             <div class="top_nav" ul>
                 <li><button type="button" onclick="location.href='index.html'" class="top_button">Homepage</button></li>
                 <li><button type="button" onclick="location.href='interests.html'" class="top_button">Interests</button></li>
-                <li><button class="top_button">Gallery</button></li>
-                <li><button class="top_button">Contact</button></li>
-
+                <li><button onclick="location.href='gallery.html'"class="top_button">Gallery</button></li>
+                <li><button class="top_button" onclick="location.href='contact.html'"class="top_button">Contact</button></li>
             </div>
         </header>
         <button id="hide" type="button" data-bs-toggle="collapse" data-bs-target="#head" aria-expanded="true" aria-controls="head"><p>˄</p><p>˅</p></button>
         
         <div class="inner_container">
             <h2 class="title">Interests & Hobbies</h2>
-            <div class="first_paragraph">
+            <article class="text">
                 <p>As you can probably tell by the whole theme of this website, I am a music enthusiast
                     and I love to play the piano. Besides music I have a lot of other hobbies which inlcude for example:</p>
-                <p><i>fitness, roller-skating, travelling, getting to know new cultures, ocasional PC gaming, 
-                    binge watching TV shows and a new hobby I picked up recently - Programming.</i></p>
+                <p><i>fitness, roller-skating, travelling, fragrances, ocasional PC gaming, 
+                    Netflix, and a new hobby I picked up recently - programming.</i></p>
                 <p>I have always liked exploring new technologies but never really dived into the deep source where the magic happens.</p>
                 <p>I knew very little basics of coding from university but it never really excited me. 
                     That all changed when I discovered CS50 course lead by professor David J. Malan.</p>
@@ -50,7 +41,7 @@
                     is that I wish my university teachers approached teaching computer science with the same passion as David does
                     because maybe I would have found out the true career path I wish now to pursue much sooner.
                 </p>
-            </div>
+            </article>
         </div>
         <footer>
             <p class="footer_sign">Daniel Valasek</p>

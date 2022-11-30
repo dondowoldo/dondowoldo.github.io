@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<!--    1.) At least 4 different pages
-2.) At least 10 HTML tags besides html,head,body,title
-3.) Integrate 1 or more features from Bootstrap
-4.) At least 5 different CSS selectors (tags,classes,id)
-5.) At leaste 5 different CSS properties (font-size,margin,etc..)
-6.) At least 1 JavaScript feature
-7.) Make sure website looks OK on mobile, laptop and PC-->
+<!--    1.) At least 4 different pages                                  - DONE
+2.) At least 10 HTML tags besides html,head,body,title                  - DONE
+3.) Integrate 1 or more features from Bootstrap                         - DONE
+4.) At least 5 different CSS selectors (tags,classes,id)                - DONE
+5.) At leaste 5 different CSS properties (font-size,margin,etc..)       - DONE
+6.) At least 1 JavaScript feature                                       - NOT DONE
+7.) Make sure website looks OK on mobile, laptop and PC                 - DONE -->
 
 <html lang="en">
 <head>
@@ -27,24 +27,24 @@
             <header class="collapse show" id="head">     
                 <h1 class="name">Daniel V.</h1>
                 <div class="top_nav" ul>
-                    <li><button class="top_button">Homepage</button></li>
+                    <li><button type="button" onclick="location.href='index.html'" class="top_button">Homepage</button></li>
                     <li><button type="button" onclick="location.href='interests.html'"class="top_button">Interests</button></li>
-                    <li><button class="top_button">Gallery</button></li>
-                    <li><button class="top_button">Contact</button></li>
+                    <li><button onclick="location.href='gallery.html'"class="top_button">Gallery</button></li>
+                    <li><button class="top_button" onclick="location.href='contact.html'"class="top_button">Contact</button></li>
                 </div>   
             </header>
         <button id="hide" type="button" data-bs-toggle="collapse" data-bs-target="#head" aria-expanded="true" aria-controls="head"><p>˄</p><p>˅</p></button>  
         
         <div class="inner_container">
             <h2 class="title">Welcome to my website</h2>
-            <div class="first_paragraph">
+            <article class="text">
                 <p>Hello everyone.</p>
                 <p>My name is Daniel, and I come from the Czech republic.</p>
                 <p class="p_topspace">This website was created for the purposes of CS50,</p>
                 <p>Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.</p>
-                <p class="p_topspace" id="pointer">Click below, if you would like to learn more.</p>
+                <p class="pointer">Click below, if you would like to learn more.</p>
                 <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target="_blank"><img class="img-fluid" id="cs50" src="/images/this_is_cs50.png"></a>
-            </div>
+            </article>
         </div>
         <footer>
             <p class="footer_sign">Daniel Valasek</p>
