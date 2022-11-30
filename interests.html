@@ -24,16 +24,18 @@
 </head>
 <body>
     <div class="outer_container">
-        <header>
+        <header class="collapse show" id="head">
             <h1 class="name">Daniel V.</h1>
             <div class="top_nav" ul>
                 <li><button type="button" onclick="location.href='index.html'" class="top_button">Homepage</button></li>
-                <li><button type="button" onclick="location.href='interests.html'" class="top_button">Interests & Hobbies</button></li>
+                <li><button type="button" onclick="location.href='interests.html'" class="top_button">Interests</button></li>
                 <li><button class="top_button">Gallery</button></li>
                 <li><button class="top_button">Contact</button></li>
 
             </div>
         </header>
+        <button id="hide" type="button" data-bs-toggle="collapse" data-bs-target="#head" aria-expanded="true" aria-controls="head"><p>˄</p><p>˅</p></button>
+        
         <div class="inner_container">
             <h2 class="title">Interests & Hobbies</h2>
             <div class="first_paragraph">
