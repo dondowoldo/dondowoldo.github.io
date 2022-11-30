@@ -151,19 +151,19 @@ margin-top: 2px;
 
 #hide
 {
+    text-align: center;
     background-color:hsla(0, 0%, 100%, 0.4);
     padding: 5px;
     border-radius: 0px 100px 100px 0px;
     width: 30px;
-    padding-top: 20px;
-    padding-right: 20px;
     position: fixed;
     top: 300px;
     left: 0;
     font-size: 22px;
+    font-weight: bold;
     line-height: 10px;
     border: 0;
-    height: 130px;
+    height: 80px;
 }
 
 .socials

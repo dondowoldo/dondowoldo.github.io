@@ -18,19 +18,31 @@
     <div class="outer_container">
         <header class="collapse show" id="head">
             <h1 class="name">Daniel V.</h1>
-            <div class="top_nav" ul>
+            <ul class="top_nav">
                 <li><button type="button" onclick="location.href='index.html'" class="top_button">Homepage</button></li>
                 <li><button type="button" onclick="location.href='interests.html'" class="top_button">Interests</button></li>
-                <li><button onclick="location.href='gallery.html'"class="top_button">Gallery</button></li>
-                <li><button class="top_button" onclick="location.href='contact.html'"class="top_button">Contact</button></li>
-            </div>
+                <li><button onclick="location.href='gallery.html'" class="top_button">Gallery</button></li>
+                <li><button onclick="location.href='contact.html'" class="top_button">Contact</button></li>
+            </ul>
         </header>
-        <button id="hide" type="button" data-bs-toggle="collapse" data-bs-target="#head" aria-expanded="true" aria-controls="head"><p>˄</p><p>˅</p></button>
-        
-        <div class="inner_container">
-            <h2 class="title">Interests & Hobbies</h2>
+        <button id="hide" onclick="changeSign()" type="button" data-bs-toggle="collapse" data-bs-target="#head" aria-expanded="true" aria-controls="head">˄</button>
+        <script>
+            function changeSign(){
+                if (document.getElementById("hide").innerHTML == "˄")
+                {
+                    document.getElementById("hide").innerHTML = "˅"
+                }
+                else
+                {
+                    document.getElementById("hide").innerHTML = "˄"
+                }  
+        }
+        </script>
+
+        <div class="inner_container">            
             <article class="text">
-                <p>As you can probably tell by the whole theme of this website, I am a music enthusiast
+                <h2 class="title">Interests & Hobbies</h2>
+                <p class="p_topspace">As you can probably tell by the whole theme of this website, I am a music enthusiast
                     and I love to play the piano. Besides music I have a lot of other hobbies which inlcude for example:</p>
                 <p><i>fitness, roller-skating, travelling, fragrances, ocasional PC gaming, 
                     Netflix, and a new hobby I picked up recently - programming.</i></p>

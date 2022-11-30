@@ -26,30 +26,43 @@
     <div class="outer_container">       
             <header class="collapse show" id="head">     
                 <h1 class="name">Daniel V.</h1>
-                <div class="top_nav" ul>
+                <ul class="top_nav">
                     <li><button type="button" onclick="location.href='index.html'" class="top_button">Homepage</button></li>
-                    <li><button type="button" onclick="location.href='interests.html'"class="top_button">Interests</button></li>
-                    <li><button onclick="location.href='gallery.html'"class="top_button">Gallery</button></li>
-                    <li><button class="top_button" onclick="location.href='contact.html'"class="top_button">Contact</button></li>
-                </div>   
+                    <li><button type="button" onclick="location.href='interests.html'" class="top_button">Interests</button></li>
+                    <li><button onclick="location.href='gallery.html'" class="top_button">Gallery</button></li>
+                    <li><button onclick="location.href='contact.html'" class="top_button">Contact</button></li>
+                </ul>   
             </header>
-        <button id="hide" type="button" data-bs-toggle="collapse" data-bs-target="#head" aria-expanded="true" aria-controls="head"><p>˄</p><p>˅</p></button>  
-        
+            <button id="hide" onclick="changeSign()" type="button" data-bs-toggle="collapse" data-bs-target="#head" aria-expanded="true" aria-controls="head">˄</button>
+            <script>
+                function changeSign(){
+                    if (document.getElementById("hide").innerHTML == "˄")
+                    {
+                        document.getElementById("hide").innerHTML = "˅"
+                    }
+                    else
+                    {
+                        document.getElementById("hide").innerHTML = "˄"
+                    }  
+            }
+            </script>
+
         <div class="inner_container">
-            <h2 class="title">Gallery</h2>
+            
             <article class="text">
-                <p class="pointer">Here are some pictures of my cat Theo, to make your day a little better!</p>
+                <h2 class="title">Gallery</h2>
+                <p class="pointer p_topspace">Here are some pictures of my cat Theo, to make your day a little better!</p>
             </article>
             <div class="pic_container">
-                    <a href="/images/theo/1.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/1.jpg"></a>
-                    <a href="/images/theo/2.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/2.jpg"></a>
-                    <a href="/images/theo/5.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/5.jpg"></a>
-                    <a href="/images/theo/3.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/3.jpg"></a>
-                    <a href="/images/theo/4.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/4.jpg"></a>                
-                    <a href="/images/theo/6.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/6.jpg"></a>
-                    <a href="/images/theo/7.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/7.jpg"></a>
-                    <a href="/images/theo/8.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/8.jpg"></a>
-                    <a href="/images/theo/10.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/10.jpg"></a>
+                    <a href="/images/theo/1.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/1.jpg" alt="Little Theo sleeping"></a>
+                    <a href="/images/theo/2.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/2.jpg" alt="Little Theo sleeping 2"></a>
+                    <a href="/images/theo/5.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/5.jpg" alt="Little Theo in a basket"></a>
+                    <a href="/images/theo/3.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/3.jpg" alt="Little Theo cute stare"></a>
+                    <a href="/images/theo/4.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/4.jpg" alt="Little Theo sitting on my shoulder"></a>                
+                    <a href="/images/theo/6.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/6.jpg" alt="Little Theo in a basket again"></a>
+                    <a href="/images/theo/7.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/7.jpg" alt="Theo playing with a toy mouse"></a>
+                    <a href="/images/theo/8.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/8.jpg" alt="Theo lost his battle with a toy mouse"></a>
+                    <a href="/images/theo/10.jpg" target="blank"><img class="img-fluid theo" src="/images/theo/10.jpg" alt="Theo in prison"></a>
             </div>
             
         </div>
